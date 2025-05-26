@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import VIfExample from './components/directives/VIfExample.vue'
+import VForExample from './components/directives/VForExample.vue'
+import VModelExample from './components/directives/v-model-examples/VModelExample.vue'
+import VModelValidationExample from './components/directives/v-model-examples/VModelValidationExample.vue'
+import VeeValidateExample from './components/directives/v-model-examples/VeeValidateExample.vue'
+import MultipleVModelExample from './components/directives/v-model-examples/MultipleVModelExample.vue'
 </script>
 
 <template>
@@ -12,6 +18,12 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <VIfExample />
+  <VForExample />
+  <VModelExample />
+  <VModelValidationExample />
+  <VeeValidateExample />
+  <MultipleVModelExample />
 </template>
 
 <style scoped>
