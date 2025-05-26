@@ -29,14 +29,14 @@ const props = defineProps<{
   todo: Todo;
 }>();
 
-// Define the emit events, custom events
+// Define the emit events, custom events - this means that the component can emit events to the parent component
 const emit = defineEmits<{
   (e: 'toggle', id: number): void;
   (e: 'delete', id: number): void;
   (e: 'edit', id: number, text: string): void;
 }>();
 
-// State variables
+// State variables, reactive variables - this means that the variables are reactive and will update when the value changes
 const isEditing = ref(false);
 const editedText = ref(props.todo.text);
 const editInput = ref<HTMLInputElement | null>(null);
